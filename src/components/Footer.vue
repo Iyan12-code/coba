@@ -1,22 +1,22 @@
 <template>
   <footer class="bg-black text-white md:min-h-screen sm:min-h-screen">
-    <div class="container mx-auto px-20 py-20">
+    <div class="container mx-auto px-30 py-20 items-center">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-4 mb-12">
         
         <!-- Brand & Description -->
         <div class="md:col-span-1">
-          <div class="flex items-center gap-3 mb-6">
+          <div class="flex items-center gap-5 mb-5">
             <img 
               src="/assets/logo.png" 
               alt="Decka Lima Logo" 
               class="h-15 w-15"
             >
-            <h3 class="text-3xl font-semibold font-poppins">Decka Lima</h3>
+            <h3 class="text-2xl font-semibold font-poppins">Decka Lima</h3>
           </div>
           
           <p class="text-gray-400 mb-6 leading-relaxed text-lg font-medium font-poppins">
-            Your Energy Needs Our Expert Solutions. Contact us for more information.
+            Your Energy Needs Our Expert Solutions. Contact us for <br> more information.
           </p>
           
           <!-- Social Media Icons -->
@@ -39,7 +39,7 @@
         
         <!-- Company Links -->
         <div class="mx-20">
-          <h4 class="text-3xl font-semibold mb-10 mt-2 font-poppins">Company</h4>
+          <h4 class="text-2xl font-semibold mb-10 mt-4 font-poppins">Company</h4>
           <ul class="space-y-3">
             <li v-for="link in companyLinks" :key="link.name">
               <a 
@@ -54,7 +54,7 @@
         
         <!-- Help Links -->
         <div>
-          <h4 class="text-3xl font-semibold mb-10 mt-2 font-poppins">Help</h4>
+          <h4 class="text-2xl font-semibold mb-10 mt-4 font-poppins">Costumer Care</h4>
           <ul class="space-y-3">
             <li v-for="link in helpLinks" :key="link.name">
               <a 
@@ -69,14 +69,14 @@
         
         <!-- Contact Info -->
         <div>
-          <h4 class="text-3xl font-semibold mb-10 mt-2 font-poppins">Contact</h4>
+          <h4 class="text-2xl font-semibold mb-10 mt-4 font-poppins">Contact</h4>
           <ul class="space-y-4">
             <li class="flex items-start gap-3 text-gray-400">
               <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
-              <span class="leading-relaxed font-medium font-poppins">
+              <span class="leading-relaxed text-xl font-medium font-poppins">
                 Jl. Industri Raya No. 123, Jakarta Timur, DKI Jakarta 13920
               </span>
             </li>
@@ -113,11 +113,9 @@
       <div class="border-t-2 border-gray-800 pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <!-- Copyright -->
-          <div class="flex items-center gap-2 text-gray-400 text-sm font-poppins">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
-            </svg>
-            <span class="text-lg font-medium font-poppins">
+          <div class="flex items-center gap-2 text-gray-400 text-sm opacity-50 font-poppins">
+            <img src="/assets/icon/copyright 1.png" class="w-5 h-5" alt="">
+            <span class="text-sm font-poppins ">
               2025 PT. Decka Lima Engineering. All rights reserved.
             </span>
           </div>
@@ -126,13 +124,13 @@
           <div class="flex gap-6">
             <a 
               href="#"
-              class="text-gray-400 hover:text-white transition-colors text-lg font-medium font-poppins"
+              class="text-gray-400 hover:text-white transition-colors text-sm opacity-50 font-poppins"
             >
               Terms & Conditions
             </a>
             <a 
               href="#"
-              class="text-gray-400 hover:text-white transition-colors text-lg font-medium font-poppins"
+              class="text-gray-400 hover:text-white transition-colors text-sm opacity-50 font-poppins"
             >
               Privacy Policy
             </a>
@@ -156,10 +154,7 @@ const companyLinks = ref([
 
 // Help Navigation Links
 const helpLinks = ref([
-  { name: 'Customer Support' },
-  { name: 'Track Order' },
-  { name: 'Returns' },
-  { name: 'FAQ' }
+  { name: 'Contact' }
 ])
 
 // Social Media Links
