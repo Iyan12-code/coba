@@ -6,7 +6,7 @@
         
         <!-- Brand & Description -->
         <div class="md:col-span-1">
-          <div class="flex items-center gap-5 mb-5">
+          <div class="flex items-center gap-5 mb-10">
             <img 
               src="/assets/logo.png" 
               alt="Decka Lima Logo" 
