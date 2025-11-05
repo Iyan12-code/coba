@@ -1,13 +1,10 @@
 <template>
-  <div id="app">
-    <!-- HomeLayout otomatis render Navbar + Footer -->
-    <HomeLayout>
-      <Home />
-    </HomeLayout>
-  </div>
+  <HomeLayout>
+    <RouterView />
+  </HomeLayout>
 </template>
 
 <script setup>
 import HomeLayout from './layouts/HomeLayout.vue';
-import Home from './components/Home.vue';
+import { RouterView } from 'vue-router';
 </script>

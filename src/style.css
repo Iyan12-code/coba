@@ -1,1 +1,6 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:wght@500;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Simonetta:ital,wght@0,900;1,900&display=swap');@import "tailwindcss";
+
+@theme {
+    --font-poppins: poppins, "sans-serif";
+    --font-tebal: 900;
+}
